@@ -111,11 +111,5 @@ weight3 = stocGradAscent1(np.array(x),y)
 print(weight3)
 plotBestFit(weight3)
 
-# logistic regression classification function
-def classifyVector(inX,weights):
-    prob = sigmoid(sum(inX*weights))
-    if prob > 0.5: return 1.0
-    else: return 0.0
-
 
 
